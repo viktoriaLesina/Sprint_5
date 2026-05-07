@@ -1,7 +1,5 @@
 from selenium.webdriver.common.by import By
 
-# Главная страница
-MAIN_PAGE_URL = "https://qa-desk.education-services.ru/"
 # Кнопка Вход и регистрация
 
 LOGIN_AND_REGISTRATION_BUTTON = (
@@ -54,13 +52,13 @@ USER_NAME = (By.XPATH, "//h3[@class = 'profileText name']")
 # Поле ввода Наздания товара
 ITEM_NAME_INPUT_FIELD = (By.XPATH, "//input[@name = 'name']")
 
-#Поле Категория
+# Поле Категория
 ITEM_CATEGORY_INPUT_FIELD = (By.XPATH, "//input[@name = 'category']")
 
-#Выбор города из дропдауна
+# Выбор города из дропдауна
 ITEM_CITY_ENTITY = (By.XPATH, "//span[text()='Санкт-Петербург']")
 
-#Выбор категории
+# Выбор категории
 ITEM_CATEGORY_ENTITY = (By.XPATH, "//span[text()='Книги']")
 # Поле Город
 ITEM_CITY_FIELD = (By.XPATH, "//input[@name = 'city']")
@@ -104,7 +102,4 @@ USER_ADD_CREATED_CARD = (By.XPATH, "//div[contains(@class, 'card')]")
 # Errors
 ERROR_FIELD_CLASS = "input_inputError"
 
-ERROR_TEXT = (
-    By.XPATH,
-    "//*[contains(text(),'Ошибка')]"
-)
+ERROR_TEXT = (By.XPATH, "//*[contains(text(),'Ошибка')]")
